@@ -1,0 +1,129 @@
+.navbar {
+    background-color: #060b26;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    z-index: 3;
+    position: relative;
+  }
+  
+  .menu-bars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+  }
+  .brand-title {
+    font-size: 40px;
+    margin: 2px;
+    margin-left:20px;
+    font-weight: 600;
+    background-image: linear-gradient(to right bottom, #f2c914, #dd6c0a);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Roboto';
+    letter-spacing: 2.5px;
+}
+  
+  .nav-menu {
+    background-color: #060b26;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    transition: 850ms;
+    z-index: 8;
+  }
+  
+  .nav-menu.active {
+    left: 0;
+    transition: 350ms;
+  }
+  
+  .nav-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 60px;
+  }
+  
+  .nav-text a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+   
+  }
+  
+  .nav-text a:hover {
+    background-color: #1a83ff;
+  }
+  
+  .nav-menu-items {
+    width: 100%;
+  }
+  
+  .navbar-toggle {
+    background-color: #060b26;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  span {
+    margin-left: 16px;
+  }
+
+  
+  .cart{
+    position:absolute;
+    right: 4%;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .login{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration: none;
+   position: absolute;
+   right:8%;
+    color: rgb(231, 243, 247);
+    
+    cursor: pointer;
+    padding: 5px;
+    transition: all .3s;
+
+  }
+
+  .login::after{
+    content: "";
+    background-color: rgb(61, 171, 249);
+    position: absolute;
+    height: 3px;
+    width:0;
+    left:0;
+    bottom:-10px;
+    transition: all .3s;
+  }
+  .login:hover{
+    color: white;
+    transform: translateY(-2px);
+  }
+  .login:hover::after{
+    width: 100%;
+  }
+
+

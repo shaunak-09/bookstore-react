@@ -1,0 +1,65 @@
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px,0.9fr));
+    
+    margin: 50px 200px;
+    gap: 130px;
+    
+}
+#bestselling {
+    background-color: #dadddd;
+    background-image: linear-gradient(to right bottom,rgb(255, 255, 255),rgb(174, 170, 170));
+    padding: 80px 0px 120px 0px; }
+.card1{
+    
+    text-align: center;
+    perspective: 150rem;
+    height: 350px;
+    position: relative;
+  
+}
+.card_side{
+       height: 360px;
+       transition: all .5s ease-in-out;
+       transition-delay: 0.1s;
+       position: absolute;
+       top: 0;
+       left:0;
+       width:100%;
+       
+       box-shadow: 4px 6px 10px rgb(110, 109, 109);
+}
+.card_side:hover{
+  top:-10px;
+  transform: scale(1.1);
+  box-shadow: 6px 8px 10px rgb(149, 146, 146) ;
+}
+
+
+.card-img{
+    height: 100%;
+    width:100%;
+    background-image: linear-gradient(to right bottom,rgb(109, 210, 243),rgb(42, 12, 162));
+    background-blend-mode: screen;
+   
+
+}
+.card-heading1{
+    height:60px;
+    width:100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-image: linear-gradient(to left,rgb(224, 246, 173),rgb(38, 156, 14));
+    font-size: 20px;
+    opacity: .8;
+    color: black;
+    font-weight: 500;
+
+}
+.genre-heading{
+  font-weight: 600;
+  color: rgb(27, 115, 238);
+  font-size: 40px;                                                                                                            
+}

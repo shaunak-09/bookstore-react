@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding:0px 10px;
+}
+.clearfix::after{
+    content:"";
+    clear:both;
+    display: table;
+}

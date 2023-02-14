@@ -1,0 +1,110 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px,0.9fr));
+    margin: 50px 200px;
+    column-gap: 100px;
+    row-gap: 100px;
+    
+}
+#recommended{
+    padding: 80px 30px 10px 30px;
+    background-image: linear-gradient(to left,rgba(148, 49, 14, 0.796),rgba(97, 35, 6, 0.79)),url(./pexels-lisa-1516983.png);
+    position: relative;
+ 
+}
+.search-bar{
+    position: absolute;
+    right:5%;
+    top:5%;
+    padding: 20px 0px;
+    background-color: rgba(176, 176, 176, 0.435);
+    height: 40px;
+    width:300px;
+    border-radius: 30px;
+    color: rgb(209, 203, 203);
+    backdrop-filter: blur(4px) saturate(180%);
+    transition:all .3s;
+   
+} 
+.search-bar:focus{
+  outline:2px solid rgb(251, 251, 251);
+  outline-offset: 2x;
+  outline-style: groove;
+  width: 290px;
+  height: 45px;
+}
+
+.search-btn{
+    color:rgb(3, 3, 3);
+    float:right;
+    width:35px;
+    height: 35px;
+    margin: 0;
+   
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all .2s;
+}
+.search-btn:active{
+  width:40px;
+  height: 40px;
+  box-shadow: #3c3b3b;
+
+}
+.search-input{
+    border: none;
+    background: none;
+    float: left;
+    outline: none;
+    color: rgb(216, 215, 215);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 0px;
+    margin: 0;
+    width:200px;
+    padding:5px 10px;
+}
+.search-input:focus{
+  color: white;
+}
+
+.search-input::placeholder{
+  color:rgb(200, 199, 199) ;
+}
+.booksheading{
+    font-family: 'Playfair Display SC';
+    font-size: 30px;
+    background-image: linear-gradient(to left bottom, #f8e0bd, #e98e05);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: transform 0.3s ease 0s;
+    margin: 0px;
+    display: inline-block;
+    padding: 0;
+  
+  }
+  .booksheading1{
+    font-family: 'Playfair Display SC';
+    font-size: 30px;
+    background-image: linear-gradient(to left bottom, #c9f0f6, #4b94f3);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: transform 0.3s ease 0s;
+    margin: 0px;
+    display: inline-block;
+    padding: 0;
+  
+  }
+
+  .booksheading:hover{
+    transform: skewY(2deg) skewX(10deg);
+  }
+  .center{
+    text-align: center;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
